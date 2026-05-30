@@ -394,7 +394,7 @@ in order to reload IIS (Open IIS, Stop and Start the server),look under the Conn
 </p>
 <br />
 
-<p align="center">
+<p>
 Then Under on the Right handed sidebar that says Action, click on stop. 
 
 
@@ -406,7 +406,7 @@ Then Under on the Right handed sidebar that says Action, click on stop.
 </p>
 <br />
 
-<p align="center">
+<p >
 Then click start.
 
 
@@ -418,11 +418,11 @@ Then click start.
 </p>
 <br />
 
+ <b>Step 10 </b>
+<h3 > Install OsTicket </h3>
 
-<h3 align="center"> Install OsTicket </h3>
 
-
-<p align="center">
+<p>
 Then, in order to install osTicket v1.15.8, first from the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” (extract in the given place)
 
 
@@ -434,7 +434,7 @@ Then, in order to install osTicket v1.15.8, first from the “osTicket-Installat
 
 <br />
 
-<p align="center">
+<p>
 copy the “upload” folder into “c:\inetpub\wwwroot”
 
 </p>
@@ -445,7 +445,7 @@ copy the “upload” folder into “c:\inetpub\wwwroot”
 </p>
 <br />
 
-<p align="center">
+<p >
 Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
 
 </p>
@@ -457,10 +457,10 @@ Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
 <br />
 
 
-<h3 align="center"> Reload IIS </h3>
+<h3> Reload IIS </h3>
 
 
-<p align="center">
+<p>
 Reload IIS (Open IIS, Stop and Start the server)
 
 </p>
@@ -474,11 +474,11 @@ Reload IIS (Open IIS, Stop and Start the server)
 <br />
 
 
-<h3 align="center"> OsTicket configurations </h3>
+<h3 > OsTicket configurations </h3>
 
 
-<p align="center">
-Go to sites -> Default -> osTicket (then click on it)
+<p >
+Go to sites -> Default -> osTicket
 
 
 </p>
@@ -489,7 +489,7 @@ Go to sites -> Default -> osTicket (then click on it)
 </p>
 <br />
 
-<p align="center">
+<p >
 On the right, click “Browse *:80”
 
 </p>
@@ -500,7 +500,7 @@ On the right, click “Browse *:80”
 </p>
 <br />
 
-<p align="center">
+<p >
 Note that some extensions are not enabled. Go back to IIS, sites -> Default -> osTicket
 
 </p>
@@ -511,7 +511,7 @@ Note that some extensions are not enabled. Go back to IIS, sites -> Default -> o
 </p>
 <br />
 
-<p align="center">
+<p >
 Double-click PHP Manager
 
 </p>
@@ -522,7 +522,7 @@ Double-click PHP Manager
 </p>
 <br />
 
-<p align="center">
+<p>
 Click “Enable or disable an extension”
 
 </p>
@@ -533,7 +533,7 @@ Click “Enable or disable an extension”
 </p>
 <br />
 
-<p align="center">
+<p>
 Enable: php_imap.dll ; Enable: php_intl.dll ; Enable: php_opcache.dll
 
 </p>
@@ -544,7 +544,7 @@ Enable: php_imap.dll ; Enable: php_intl.dll ; Enable: php_opcache.dll
 </p>
 <br />
 
-<p align="center">
+<p >
 Refresh the osTicket site in your browser, observe the changes
 
 </p>
@@ -555,7 +555,7 @@ Refresh the osTicket site in your browser, observe the changes
 </p>
 <br />
 
-<p align="center">
+<p >
 Rename: ost-config.php. From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php ; To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 </p>
@@ -566,7 +566,7 @@ Rename: ost-config.php. From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconf
 </p>
 <br />
 
-<p align="center">
+<p ">
 Assign Permissions: ost-config.php (Right click file and go to properties)
 
 </p>
@@ -577,7 +577,7 @@ Assign Permissions: ost-config.php (Right click file and go to properties)
 </p>
 <br />
 
-<p align="center">
+<p >
 Then go to Security -> Advanced
 
 
@@ -589,7 +589,7 @@ Then go to Security -> Advanced
 </p>
 <br />
 
-<p align="center">
+<p >
 Disable inheritance -> Remove All
 
 
@@ -602,7 +602,7 @@ Disable inheritance -> Remove All
 </p>
 <br />
 
-<p align="center">
+<p >
 In order to  go from New Permissions -> Everyone -> All, first click on add to add New Permissions.
 
 </p>
@@ -613,7 +613,7 @@ In order to  go from New Permissions -> Everyone -> All, first click on add to a
 </p>
 <br />
 
-<p align="center">
+<p>
 Select Principal.
 
 </p>
@@ -635,7 +635,7 @@ Type everyone, then click check name, then OK. In real life, this is not ideal f
 </p>
 <br />
 
-<p align="center">
+<p >
 Then click full control, then OK.
 
 </p>
@@ -645,7 +645,7 @@ Then click full control, then OK.
 </p>
 <br />
 
-<p align="center">
+<p>
 Make sure in the name it should be ‘‪C:\inetpub\wwwroot\osTicket\include\ost-config.php’. Then click Apply, then OK.
 
 </p>
@@ -656,7 +656,7 @@ Make sure in the name it should be ‘‪C:\inetpub\wwwroot\osTicket\include\ost
 </p>
 <br />
 
-<p align="center">
+<p >
 Then click OK in ost-config.php properties.
 
 </p>
@@ -668,10 +668,10 @@ Then click OK in ost-config.php properties.
 <br />
 
 
-<h3 align="center"> Final OsTicket configurations </h3>
+<h3> Final OsTicket configurations </h3>
 
 
-<p align="center">
+<p >
 Continue Setting up osTicket in the browser (click Continue)
 
 </p>
@@ -682,7 +682,7 @@ Continue Setting up osTicket in the browser (click Continue)
 </p>
 <br />
 
-<p align="center">
+<p 
 - **Name:** Helpdesk 
 - **Default email (receives email from customers):** any
 - **(The other email should be different)**
@@ -695,7 +695,7 @@ Continue Setting up osTicket in the browser (click Continue)
 </p>
 <br />
 
-<p align="center">
+<p >
 Use your admin login info there. (Afterwards move on to the next step, but we are still not done here)
 
 </p>
@@ -707,7 +707,7 @@ Use your admin login info there. (Afterwards move on to the next step, but we ar
 <br />
 
 
-<h3 align="center"> Install HeidiSQL </h3>
+<h3 > Install HeidiSQL </h3>
 
 
 <p align="center">
