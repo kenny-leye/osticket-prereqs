@@ -37,7 +37,8 @@ Outlining the prerequisites and step-by-step installation of the open-source hel
   
 <h2>Installation Steps</h2>
 
-<p align="center">
+<b>Step 1 </b>
+<p >
 Log into Microsoft Azure and head to the virtual machines tab, then click on the + Create Button and press create Azure Virtual Machine. 
 </p>
 </p>
@@ -48,7 +49,7 @@ Log into Microsoft Azure and head to the virtual machines tab, then click on the
 </p>
 <br />
 
-<p align="center">
+<p>
   
 - **Create a new resource group:** `osTicket`  
 - **Virtual machine name:** `osticket-vm`  
@@ -67,7 +68,8 @@ Log into Microsoft Azure and head to the virtual machines tab, then click on the
 </p>
 <br />
 
-<p align="center">
+
+<p >
 Click on the "Review + Create" button.
 
 </p>
@@ -78,7 +80,7 @@ Click on the "Review + Create" button.
 </p>
 <br />
 
-<p align="center">
+<p >
 Next click on the Create button. 
 </p>
 </p>
@@ -88,7 +90,8 @@ Next click on the Create button.
 </p>
 <br />
 
-<p align="center">
+
+<p>
 Log into the VM with Remote Desktop. Use the previous login information, and public IP address from the VM you created.
 
 </p>
@@ -100,10 +103,10 @@ Log into the VM with Remote Desktop. Use the previous login information, and pub
 </p>
 <br />
 
-<p align="center">
+<b>Step 2 </b>
+<p >
 Within the VM (osticket-vm), download the osTicket-Installation-Files.zip 
-(https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD)
-</p>
+
 </p>
   
 ![image](https://github.com/user-attachments/assets/29e4247b-aa43-49b7-8816-1a89f394b9da)
@@ -111,30 +114,23 @@ Within the VM (osticket-vm), download the osTicket-Installation-Files.zip
 </p>
 <br />
 
-<p align="center">
+<p >
 Unzip it onto your desktop.
 
 </p>
-</p>
-  
-![image](https://github.com/user-attachments/assets/5de7bedc-26ff-4fdd-81f2-fe19358ac25f)
-</p>
+
 <br />
 
-<p align="center">
-The folder should be called “osTicket-Installation-Files”. We will use the files in this folder to install osTicket and some of the dependencies.
 
 </p>
 </p>
   
-![image](https://github.com/user-attachments/assets/8f904d8d-add2-437a-8c67-032203fd03ca)
-
 
 </p>
 <br />
-
-<p align="center">
-In order to Install / Enable IIS in Windows WITH CGI, first go to the Control Panel from the start menu and click on it. Then click on Program [Uninstall Program]
+<b>Step 3 </b>
+<p>
+ Go to the Control Panel from the start menu and click on it. Then click on Program [Uninstall Program]
 
 
 </p>
@@ -146,7 +142,8 @@ In order to Install / Enable IIS in Windows WITH CGI, first go to the Control Pa
 </p>
 <br />
 
-<p align="center">
+
+<p>
 From there, click on "Turn Window Features On or Off"
 
 </p>
@@ -158,7 +155,7 @@ From there, click on "Turn Window Features On or Off"
 </p>
 <br />
 
-<p align="center">
+<p >
 Check Internet Information Services box.
 
 
@@ -170,7 +167,7 @@ Check Internet Information Services box.
 </p>
 <br />
 
-<p align="center">
+<p >
 Expand that folder, then expand World Web Web Services folder, then expand Application Development Features, then click CGI. Then click OK. 
 
 </p>
@@ -181,7 +178,7 @@ Expand that folder, then expand World Web Web Services folder, then expand Appli
 </p>
 <br />
 
-<p align="center">
+<p\>
 Type 127.0.0.1 in the address bar in a browser in the windows-vm, then press enter.
 
 </p>
@@ -192,13 +189,12 @@ Type 127.0.0.1 in the address bar in a browser in the windows-vm, then press ent
 </p>
 <br />
 
+<b>Step 4 </b>
+<h3> Installing PHP Manager </h3>
 
-<h3 align="center"> Installing PHP Manager </h3>
 
-
-<p align="center">
-From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) [Say yes to everything and install it]
-
+<p >
+From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) 
 </p>
 </p>
   
@@ -208,11 +204,11 @@ From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (
 </p>
 <br />
 
+<b>Step 5 </b>
+<h3 > Installing Rewrite Manager </h3>
 
-<h3 align="center"> Installing Rewrite Manager </h3>
 
-
-<p align="center">
+<p >
 From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
 </p>
 </p>
@@ -224,11 +220,11 @@ From the “osTicket-Installation-Files” folder install the Rewrite Module (re
 <br />
 
 
-<h3 align="center"> Create directory called C:\PHP </h3>
+<h3 "> Create directory called C:\PHP </h3>
 
 
-<p align="center">
-In order to create the directory C:\PHP, first open a new file explorer folder. Go to the C drive within This PC icon. Create a new folder there, and name it PHP.
+<p >
+ To create the directory C:\PHP, first open a new file explorer folder. Go to the C drive within This PC icon. Create a new folder there, and name it PHP.
 </p>
 </p>
   
@@ -239,7 +235,7 @@ In order to create the directory C:\PHP, first open a new file explorer folder. 
 
 
 
-<p align="center">
+<p >
 From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder.
 
 </p>
@@ -253,11 +249,11 @@ From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nt
 </p>
 <br />
 
+<b>Step 6</b>
+<h3 > Download VC_redist </h3>
 
-<h3 align="center"> Download VC_redist </h3>
 
-
-<p align="center">
+<p ">
 From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 
 </p>
@@ -268,11 +264,11 @@ From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 </p>
 <br />
 
+<b>Step 7 </b>
+<h3 > Download MySQL </h3>
 
-<h3 align="center"> Download MySQL </h3>
 
-
-<p align="center">
+<p >
 From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
 
 
@@ -283,7 +279,7 @@ From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5
 </p>
 <br />
 
-<p align="center">
+<p >
 Choose Typical Setup.
 
 </p>
@@ -293,7 +289,7 @@ Choose Typical Setup.
 </p>
 <br />
 
-<p align="center">
+<p >
 Launch Configuration Wizard (after install). 
 
 </p>
@@ -303,8 +299,9 @@ Launch Configuration Wizard (after install).
 </p>
 <br />
 
-<p align="center">
-Choose Standard Configuration, then next. Then choose "Install As Window Service" (leave the default setting for this alone), then click next. Follow by putting this login information in the setup: new root password: root ; confirm: root. Then click next, then execute. 
+<b>Step 8 </b>
+<p>
+Choose Standard Configuration, then next. Then choose "Install As Window Service" , then click next. Follow by putting this login information in the setup: new root password: root ; confirm: root. Then click next, then execute. 
 
 </p>
 </p>
@@ -315,9 +312,8 @@ Choose Standard Configuration, then next. Then choose "Install As Window Service
 </p>
 <br />
 
-<p align="center">
-Save login information on the desktop with notepad.
-
+<p >
+Save login info
 </p>
 </p>
 
@@ -326,11 +322,11 @@ Save login information on the desktop with notepad.
 </p>
 <br />
 
+<b>Step 9 </b>
+<h3 > Configurations in IIS </h3>
 
-<h3 align="center"> Configurations in IIS </h3>
 
-
-<p align="center">
+<p >
 Open IIS as an Admin
 
 </p>
@@ -341,7 +337,7 @@ Open IIS as an Admin
 </p>
 <br />
 
-<p align="center">
+<p >
 In order to register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe), first open PHP Manager
 
 </p>
@@ -352,7 +348,7 @@ In order to register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe), fi
 </p>
 <br />
 
-<p align="center">
+<p >
 Select Register New PHP version.
 
 
@@ -365,7 +361,7 @@ Select Register New PHP version.
 </p>
 <br />
 
-<p align="center">
+<p >
 Click the three dots to browse through it.
 
 </p>
@@ -376,7 +372,7 @@ Click the three dots to browse through it.
 </p>
 <br />
 
-<p align="center">
+<p >
 Go to C drive and into PHP folder. Then select php-cgi.exe, then click open. Then click OK.
 
 </p>
@@ -387,7 +383,7 @@ Go to C drive and into PHP folder. Then select php-cgi.exe, then click open. The
 </p>
 <br />
 
-<p align="center">
+<p>
 in order to reload IIS (Open IIS, Stop and Start the server),look under the Connections left sidebar, where it says osticket-vm (osTicket-vm\labuser) and double click it.
 
 </p>
@@ -726,7 +722,7 @@ Open Heidi SQL to install. (Yes to everything, check launch, and click finish)
 </p>
 <br />
 
-<p align="center">
+<p >
 Click Skip
 
 </p>
@@ -737,7 +733,7 @@ Click Skip
 </p>
 <br />
 
-<p align="center">
+<p >
 Click New
 
 </p>
@@ -748,7 +744,7 @@ Click New
 </p>
 <br />
 
-<p align="center">
+<p >
 In order to create a new session, type root for username and password, then click open to connect to the session. 
 
 </p>
@@ -757,8 +753,8 @@ In order to create a new session, type root for username and password, then clic
 ![image](https://github.com/user-attachments/assets/5a83d2e6-f2d3-4741-953f-34a37988ad69)
 
 
-<p align="center">
-Create a database called “osTicket”, then click OK (You have to right click Unnamed) (Can refresh this by right clicking after you install in the next step).
+<p>
+Create a database called “osTicket”, then click OK 
 
 </p>
 </p>
@@ -769,10 +765,10 @@ Create a database called “osTicket”, then click OK (You have to right click 
 <br />
 
 
-<h3 align="center"> Continue Setting Up osTicket in Browser </h3>
+<h3> Continue Setting Up osTicket in Browser </h3>
 
 
-<p align="center">
+<p >
 Continue Setting up osTicket in the browser. MySQL Database: osTicket ; MySQL Username: root ; MySQL Password: root ; Click “Install Now!”
 
 </p>
@@ -783,10 +779,7 @@ Continue Setting up osTicket in the browser. MySQL Database: osTicket ; MySQL Us
 </p>
 <br />
 
-<p align="center">
-Congratulations, hopefully it is installed with no errors! Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
-</p>
 </p>
 
 ![image](https://github.com/user-attachments/assets/5c20d76c-d6be-473c-af2d-58d14a670537)
@@ -797,7 +790,7 @@ Congratulations, hopefully it is installed with no errors! Browse to your help d
 </p>
 <br />
 
-<p align="center">
+<p >
 End Users osTicket URL: http://localhost/osTicket/ 
 
 
@@ -807,10 +800,5 @@ End Users osTicket URL: http://localhost/osTicket/
 ![image](https://github.com/user-attachments/assets/61689245-e39e-48e2-a73f-a12dc9787316)
 
 </p>
-<br />
 
-<h3 align="center">Conclusion</h3>
 
-<p align="center">
-Great job! You've successfully set up osTicket on your Windows virtual machine. To avoid unnecessary charges, be sure to shut down the VM in Azure when you're not using it. Well done on completing this project!
-</p>
